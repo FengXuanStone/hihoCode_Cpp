@@ -47,7 +47,6 @@ void solveClearance(int nums[], int size, vector<int>& mine, vector<int>& empty)
         for(int i = 0; i < size; ++i) {
             int result = 0;
             for(auto can = candidate.begin(); can != candidate.end(); ++can) {
-                int ssss = (*can)[i];
                 result += (*can)[i];
             }
             if(result == 0) {
